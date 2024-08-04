@@ -40,6 +40,6 @@ app.get('/api', (req, res) => {
 //   res.json(people[personName]);
 // });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Started server - http://localhost:${PORT}`);
 });
