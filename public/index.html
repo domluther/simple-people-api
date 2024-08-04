@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Person tracker</title>
+    <link rel="stylesheet" type='text/css' href="style.css"></link>
+  </head>
+  <body>
+    <h1>Person lookup</h1>
+    <h2>Want to find someone? Type them in and I'll tell you all about them</h2>
+    <form>
+      <input type="text" id="nameInput" value="alice" />
+      <button class="lookup">Look up</button>
+    </form>
+    <section class="details hidden">
+      <p>
+        <span class="name"></span> is a <span class="age"></span> year-old
+        <span class="nationality"></span> that loves to eat
+        <span class="food"></span>.
+      </p>
+    </section>
+    <section class="error hidden">User unknown</section>
+    <span>Endpoint: https://simple-rapper-api.herokuapp.com/api/:name</span>
+
+    <script src="main.js"></script>
+  </body>
+</html>

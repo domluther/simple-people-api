@@ -1,0 +1,130 @@
+const people = {
+  alice: {
+    age: 28,
+    nationality: 'American',
+    favouriteFood: 'pizza',
+    fullName: 'Alice Johnson',
+  },
+  bob: {
+    age: 34,
+    nationality: 'British',
+    favouriteFood: 'fish and chips',
+    fullName: 'Bob Smith',
+  },
+  carla: {
+    age: 22,
+    nationality: 'Canadian',
+    favouriteFood: 'poutine',
+    fullName: 'Carla Dubois',
+  },
+  dario: {
+    age: 40,
+    nationality: 'Italian',
+    favouriteFood: 'pasta',
+    fullName: 'Dario Rossi',
+  },
+  emily: {
+    age: 29,
+    nationality: 'Australian',
+    favouriteFood: 'meat pie',
+    fullName: 'Emily Brown',
+  },
+  fiona: {
+    age: 31,
+    nationality: 'Irish',
+    favouriteFood: 'stew',
+    fullName: "Fiona O'Connor",
+  },
+  gabriel: {
+    age: 25,
+    nationality: 'Brazilian',
+    favouriteFood: 'feijoada',
+    fullName: 'Gabriel Santos',
+  },
+  hana: {
+    age: 27,
+    nationality: 'Japanese',
+    favouriteFood: 'sushi',
+    fullName: 'Hana Suzuki',
+  },
+  isaac: {
+    age: 33,
+    nationality: 'Mexican',
+    favouriteFood: 'tacos',
+    fullName: 'Isaac Martinez',
+  },
+  julia: {
+    age: 26,
+    nationality: 'German',
+    favouriteFood: 'wurst',
+    fullName: 'Julia Müller',
+  },
+  kofi: {
+    age: 38,
+    nationality: 'Ghanaian',
+    favouriteFood: 'jollof rice',
+    fullName: 'Kofi Mensah',
+  },
+  leila: {
+    age: 32,
+    nationality: 'Turkish',
+    favouriteFood: 'kebab',
+    fullName: 'Leila Yilmaz',
+  },
+  mia: {
+    age: 24,
+    nationality: 'Spanish',
+    favouriteFood: 'paella',
+    fullName: 'Mia González',
+  },
+  nicolas: {
+    age: 35,
+    nationality: 'Argentinian',
+    favouriteFood: 'asado',
+    fullName: 'Nicolas Fernández',
+  },
+  olga: {
+    age: 27,
+    nationality: 'Russian',
+    favouriteFood: 'borscht',
+    fullName: 'Olga Ivanova',
+  },
+  paolo: {
+    age: 30,
+    nationality: 'Italian',
+    favouriteFood: 'risotto',
+    fullName: 'Paolo Bianchi',
+  },
+  qing: {
+    age: 29,
+    nationality: 'Chinese',
+    favouriteFood: 'dumplings',
+    fullName: 'Qing Li',
+  },
+  rita: {
+    age: 26,
+    nationality: 'South African',
+    favouriteFood: 'braai',
+    fullName: 'Rita Nkosi',
+  },
+  sasha: {
+    age: 34,
+    nationality: 'Polish',
+    favouriteFood: 'pierogi',
+    fullName: 'Sasha Kowalski',
+  },
+  tom: {
+    age: 41,
+    nationality: 'Dutch',
+    favouriteFood: 'stroopwafels',
+    fullName: 'Tom de Vries',
+  },
+  uma: {
+    age: 30,
+    nationality: 'Indian',
+    favouriteFood: 'biryani',
+    fullName: 'Uma Patel',
+  },
+};
+
+module.exports = people;
