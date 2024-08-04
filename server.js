@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Listening for api calls - uses req.query
 // http://localhost:8000/api?name=bob
 app.get('/api', (req, res) => {
-  const personName = req.query.name;
+  const personName = req.query.name?.toLowerCase();
   if (people[personName]) {
     // res.json({ name: 'bob' });
     res.json(people[personName]);
