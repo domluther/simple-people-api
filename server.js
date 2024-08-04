@@ -21,22 +21,24 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Listening for api calls - uses req.query
 // http://localhost:8000/api?name=bob
 app.get('/api', (req, res) => {
-  const personName = req.query.name?.toLowerCase();
+  const personName = req.query.name;
   if (people[personName]) {
+    // res.json({ name: 'bob' });
     res.json(people[personName]);
+  } else {
+    res.json({ names: Object.keys(people).join(', ') });
   }
-  res.json({ name: 'unknown' });
 });
 
 // Second way of doing it - uses req.params
 // Colon means that it is a query parameter
 // http://localhost:8000/api/bob
-app.get('/api/:name', (req, res) => {
-  // Optional chaining as may be no name
-  const personName = req.params.name?.toLowerCase();
-  // Send a json file
-  res.json(people[personName]);
-});
+// app.get('/api/:name', (req, res) => {
+//   // Optional chaining as may be no name
+//   const personName = req.params.name?.toLowerCase();
+//   // Send a json file
+//   res.json(people[personName]);
+// });
 
 app.listen(PORT, () => {
   console.log(`Started server - http://localhost:${PORT}`);
